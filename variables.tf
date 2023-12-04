@@ -5,7 +5,7 @@ variable "security_groups" {
     ingress_rules = optional(list(object({
       description = optional(string)
       priority    = optional(number)
- 
+
       from_port   = number
       to_port     = number
       protocol    = string
@@ -22,7 +22,7 @@ variable "security_groups" {
   }))
   default = {}
 }
- 
+
 variable "vpc_id" {
   type = string
 }
